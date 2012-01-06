@@ -23,7 +23,12 @@ Thats it. Your video will now be embedding into your blog post.
 Individual users can also enter their own Sorenson 360 credentials
 from their profile page.
 
-Please note that the Sorenson 360 WordPress plugin requires PHP 5 or above.
+Please note that the Sorenson 360 WordPress plugin requires PHP 5 or above and currently supports up to Wordpress 2.6.
+
+This project is not actively supported by Sorenson Media. If you would like to upgrade it to a newer version of Wordpress
+we would be happy to review any pull requests for code updates.
+
+Thank you,
 
 The Sorenson Media Team  
 
