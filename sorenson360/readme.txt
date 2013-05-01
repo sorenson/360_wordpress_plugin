@@ -1,9 +1,11 @@
 === Plugin Name ===
-Contributors: Sorenson Media
+Contributors: sorensondev, alexkingorg
 Tags: video, 360, sorenson
 Requires at least: 2.4
 Tested up to: 3.5.1
-Stable tag: trunk
+Stable tag: 1.3.1
+License: GPLv2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 The Sorenson 360 WordPress Plugin enables you to easily incorporate your Sorenson 360 videos
 directly into your WordPress blog.
@@ -35,15 +37,23 @@ site, point to Settings and select "Sorenson 360" from the drop-down menu.
 
 2. Enter your Sorenson 360 username and password.
 
-6. Click "Test Login Info" to verify your credentials.
+3. Click "Test Login Info" to verify your credentials.
 
-7. Click "Update Sorenson 360 Options" to complete the configuration of the
+4. Click "Update Sorenson 360 Options" to complete the configuration of the
 Sorenson 360 Video Plugin.
 
-If desired, you may choose to allow individual to enter their own Sorenson 360 credentials
-from their profile page.
+If desired, you may also choose to allow individual to enter their own Sorenson 360 credentials
+from their profile page by checking the box below the form.
 
 == Changelog ==
-= 1.4.0 =
+
+= 1.3.1 =
 * Fixes a bug that would hide the post editor toolbar.
 * Update the Sorenson 360 icon to match the other icons in the toolbar.
+
+== Upgrade Notice ==
+
+= 1.3.1 =
+This fixes the plugin so that the toolbar in the post editor will no longer be
+hidden.  Also, you'll see an updated Sorenson Media bloom for the icon in the
+toolbar.
