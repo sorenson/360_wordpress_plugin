@@ -1,0 +1,96 @@
+#sor360_options_page {
+  margin: 0px;
+  padding: 10px 0;
+  
+  
+}
+
+#sor360_options_page fieldset  {
+  padding:65px 20px 20px 20px;
+  width:80%;
+  border:1px solid #ccc;
+  background: #fff url(<?php bloginfo('url'); ?>/wp-content/plugins/<?php echo dirname(plugin_basename(__FILE__)) ?>/resources/sorenson-logo.png) 10px 10px no-repeat;
+  position:relative;
+}
+#sor360_options_page fieldset label {
+  display:block;
+  color:#000;
+}
+#sor360_options_page fieldset #prompt {
+  position:absolute;
+  top:0px;
+  right:20px;
+}
+#sor360_options_page #author_override {
+  margin:20px;
+}
+#sor360_login_test_result {
+  background: #FFFBCC;
+  display: none;
+  margin: 10px 0;
+  padding: 5px;
+  border:1px solid #E6DB55;
+  color:#111;
+  font-weight:bold;
+}
+#sor360_options_page div.clear {
+  clear: both;
+  float: none;
+}
+
+.sorviewer {
+  background:#f1f1f1;
+  border:1px solid #ccc;
+  margin-bottom:10px;
+  padding:5px;
+}
+.sorviewer  img{ 
+  background:#fff;
+  padding:2px;
+  border:1px solid #ccc;
+
+}
+.sor_w_title small em{
+  color:#777;
+  font-size:12px;
+}
+div#sor_file_list div.sor-pagination-links {
+  padding:5px 0 2px 0;
+  display:block;
+  height:30px;
+}
+div#sor_file_list div.sor-pagination-links a {
+    background:#21759B;
+    color:#fff;
+    padding:4px 8px;
+    margin-right:3px;
+    display:block;
+    float:left;
+    cursor:pointer;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+div#sor_file_list div.sor-pagination-links a.on {
+  background:#D54E21;
+}
+div#sor_file_list div.sor-pagination-links a:hover {
+  background:#d57b5e;
+}
+.sor_w_title {
+    background: #fff url(<?php bloginfo('url'); ?>/wp-content/plugins/<?php echo dirname(plugin_basename(__FILE__)) ?>/resources/sorenson-logo-small.png) top right no-repeat;
+    padding:5px 0;
+
+}
+/* Tabs
+----------------------------------*/
+.ui-tabs { padding: .0em; zoom: 1; }
+.ui-tabs .ui-tabs-nav { list-style: none; position: relative; padding: .0em .0em 0 .5em; border-bottom:1px solid #999;height:28px; }
+.ui-tabs .ui-tabs-nav li { position: relative; float: left; border-bottom-width: 0 !important; margin: 0 .2em -1px 0; padding: 0; background:#ccc; border:1px solid #999;}
+.ui-tabs .ui-tabs-nav li a { float: left; text-decoration: none; padding: 5px; color:#21759B; }
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { padding-bottom: 1px; border-bottom-width: 0; background:#fff; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { padding: 2px; display: block; border-width: 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }

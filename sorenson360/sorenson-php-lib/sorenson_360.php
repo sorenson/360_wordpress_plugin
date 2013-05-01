@@ -38,6 +38,9 @@ class S360 {
   }
   
   private static function _do_post($url) {
+    if (!function_exists('json_decode')) {
+      return array('errorMessage' => 'JSON is not installed', 'errorCode' => '999');
+    }
     $output = S360::_post($url);
     if ($output) {
       $output = json_decode($output, true);
