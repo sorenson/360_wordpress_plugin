@@ -1,6 +1,6 @@
 (function() {
 	// Load plugin specific language pack
-	tinymce.PluginManager.requireLangPack('sorenson360');
+	//tinymce.PluginManager.requireLangPack('sorenson360');
 
 	tinymce.create('tinymce.plugins.sor360', {
 		/**
@@ -16,7 +16,7 @@
 			// Register example button
 			ed.addButton('sorensonembed', {
 				title : 'Sorenson 360 Embed',
-				image : url + '/../../buttons/sor-new.png',
+				image : url + '/../../buttons/bloom.png',
 				onclick : function() {
 					s360ButtonClick();
 				}							
