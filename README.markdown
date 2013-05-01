@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Sorenson 360 ===
 Contributors: sorensondev, alexkingorg
 Tags: video, 360, sorenson
 Requires at least: 2.4
@@ -7,7 +7,7 @@ Stable tag: 1.3.1
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-The Sorenson 360 WordPress Plugin enables you to easily incorporate your Sorenson 360 videos
+The Sorenson 360 WordPress plugin enables you to easily incorporate your Sorenson 360 videos
 directly into your WordPress blog.
 
 == Description ==
@@ -19,28 +19,28 @@ the Add to post button.  Your video will now be embedded in your blog post.
 == Installation ==
 
 = Automatic Installation =
-1. Log in to your WordPress admin panel, navigate to the Plugins menu and
-click Add New.
-2. In the search field type "Sorenson 360" and click Search Plugins. From the
-search results, pick "Sorenson 360 Video Plugin" and click Install Now. WordPress will ask
+1. Log in to your WordPress admin panel, navigate to the *Plugins* menu and
+click *Add New*.
+2. In the search field type "Sorenson 360" and click *Search Plugins*. From the
+search results, find "Sorenson 360" and click *Install Now*. WordPress will ask
 you to confirm to complete the installation.
 
 = Manual Installation =
 1. Extract the zip file.
 2. Upload the contents to the `wp-content/plugins/` directory of your
 WordPress site.
-3. Activate the "Sorenson 360 Video Plugin" from the Plugins page.
+3. Activate the Sorenson 360 plugin from the *Plugins* page.
 
 = Configuration =
-1. After activating the Sorenson 360 Video Plugin admin page of your WordPress
-site, point to Settings and select "Sorenson 360" from the drop-down menu.
+1. After activating the "Sorenson 360" plugin, point to *Settings* and select
+"Sorenson 360" from the drop-down menu.
 
 2. Enter your Sorenson 360 username and password.
 
-3. Click "Test Login Info" to verify your credentials.
+3. Optionally, click "Test Login Info" to verify your credentials.
 
 4. Click "Update Sorenson 360 Options" to complete the configuration of the
-Sorenson 360 Video Plugin.
+Sorenson 360 plugin.
 
 If desired, you may also choose to allow individual to enter their own Sorenson 360 credentials
 from their profile page by checking the box below the form.
