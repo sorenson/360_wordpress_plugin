@@ -3,7 +3,7 @@ Contributors: sorensondev, alexkingorg
 Tags: video, 360, sorenson
 Requires at least: 2.4
 Tested up to: 3.5.1
-Stable tag: 1.3.1
+Stable tag: 1.3.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,11 +47,19 @@ from their profile page by checking the box below the form.
 
 == Changelog ==
 
+= 1.3.2 =
+* Fixes a bug that was not properly displaying the Sorenson 360 logo in the
+video chooser or on the settings page.
+
 = 1.3.1 =
 * Fixes a bug that would hide the post editor toolbar.
 * Update the Sorenson 360 icon to match the other icons in the toolbar.
 
 == Upgrade Notice ==
+
+= 1.3.2 =
+This fixes a bug that was not properly displaying the Sorenson 360 logo in the
+video chooser or on the settings page.
 
 = 1.3.1 =
 This fixes the plugin so that the toolbar in the post editor will no longer be
