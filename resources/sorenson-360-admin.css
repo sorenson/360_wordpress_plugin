@@ -9,7 +9,7 @@
   padding:65px 20px 20px 20px;
   width:80%;
   border:1px solid #ccc;
-  background: #fff url(<?php bloginfo('url'); ?>/wp-content/plugins/<?php echo dirname(plugin_basename(__FILE__)) ?>/resources/sorenson-logo.png) 10px 10px no-repeat;
+  background: #fff url(<?php bloginfo('url'); ?>/wp-content/plugins/<?php echo dirname(plugin_basename(__FILE__)) ?>/sorenson-logo.png) 10px 10px no-repeat;
   position:relative;
 }
 #sor360_options_page fieldset label {
