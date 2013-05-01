@@ -1,59 +1,29 @@
-=== Sorenson 360 ===
-Contributors: sorensondev, alexkingorg
-Tags: video, 360, sorenson
-Requires at least: 2.4
-Tested up to: 3.5.1
-Stable tag: 1.3.1
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+# Sorenson 360 WordPress Plugin
 
-The Sorenson 360 WordPress plugin enables you to easily incorporate your Sorenson 360 videos
-directly into your WordPress blog.
+## Welcome to the Sorenson 360 WordPress Plugin.
 
-== Description ==
-When creating or editing posts, a Sorenson 360 icon will appear in the editor
-toolbar.  Clicking this icon will present a list of videos in your Sorenson 360
-account.  You can then simply choose the embed size of your choice and click
-the Add to post button.  Your video will now be embedded in your blog post.
+This plugin allows you to easily incorporate your Sorenson 360 videos
+directly into your WordPress blog. Simply extract this zip file
+into your wp-content/plugins directory. Once extracted follow these
+simple steps:
 
-== Installation ==
+1. Go to the admin page of your WordPress blog and click the plugins link.
+* Click the activate action on the Sorenson 360 Video plugin.
+* Click on the Settings link
+* Under Settings, click the Sorenson 360 link
+* Enter your Sorenson 360 username and password
+* Click the Test Login Info button to verify credentials
+* Click the Update Sorenson 360 Options button
 
-= Automatic Installation =
-1. Log in to your WordPress admin panel, navigate to the *Plugins* menu and
-click *Add New*.
-2. In the search field type "Sorenson 360" and click *Search Plugins*. From the
-search results, find "Sorenson 360" and click *Install Now*. WordPress will ask
-you to confirm to complete the installation.
+Now when adding a new post there will be a Sorenson 360 icon (bloom)
+that when clicked will bring up a list of your Sorenson 360 video.
+Simply choose the embed size of your choice and click the Add to post button.
+Thats it. Your video will now be embedding into your blog post.
 
-= Manual Installation =
-1. Extract the zip file.
-2. Upload the contents to the `wp-content/plugins/` directory of your
-WordPress site.
-3. Activate the Sorenson 360 plugin from the *Plugins* page.
+Individual users can also enter their own Sorenson 360 credentials
+from their profile page.
 
-= Configuration =
-1. After activating the "Sorenson 360" plugin, point to *Settings* and select
-"Sorenson 360" from the drop-down menu.
+Please note that the Sorenson 360 WordPress plugin requires PHP 5 or above.
 
-2. Enter your Sorenson 360 username and password.
+The Sorenson Media Team  
 
-3. Optionally, click "Test Login Info" to verify your credentials.
-
-4. Click "Update Sorenson 360 Options" to complete the configuration of the
-Sorenson 360 plugin.
-
-If desired, you may also choose to allow individual to enter their own Sorenson 360 credentials
-from their profile page by checking the box below the form.
-
-== Changelog ==
-
-= 1.3.1 =
-* Fixes a bug that would hide the post editor toolbar.
-* Update the Sorenson 360 icon to match the other icons in the toolbar.
-
-== Upgrade Notice ==
-
-= 1.3.1 =
-This fixes the plugin so that the toolbar in the post editor will no longer be
-hidden.  Also, you'll see an updated Sorenson Media bloom for the icon in the
-toolbar.
