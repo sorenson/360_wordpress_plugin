@@ -3,7 +3,7 @@
 Plugin Name: Squeeze Stream Video Plugin
 Plugin URI: http://www.sorensonmedia.com/wordpress-plugin/
 Description: Integration of your Sorenson File library into Wordpress.
-Version: 1.3.2
+Version: 1.3.3
 Author: Sorenson Media
 Author URI: http://www.sorensonmedia.com/
 */
