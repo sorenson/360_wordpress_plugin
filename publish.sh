@@ -6,9 +6,9 @@
 # Source: https://github.com/thenbrent/multisite-user-management/blob/master/deploy.sh
 
 #prompt for plugin slug
-#echo -e "Plugin Slug (squeeze-stream): \c"
+#echo -e "Plugin Slug (sorenson-360): \c"
 #read PLUGINSLUG
-PLUGINSLUG='squeeze-stream'
+PLUGINSLUG='sorenson-360'
 
 # main config, set off of plugin slug
 CURRENTDIR=`pwd`
