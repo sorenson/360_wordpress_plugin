@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Sorenson 360 Video Plugin
+Plugin Name: Squeeze Stream Video Plugin
 Plugin URI: http://www.sorensonmedia.com/wordpress-plugin/
 Description: Integration of your Sorenson File library into Wordpress.
 Version: 1.3.2
@@ -228,7 +228,7 @@ VALUES ('$s360assetkey','$s360embedcode','$s360assetid');
   <script type="text/javascript">
   // <![CDATA[
     function s360ButtonClick() {
-      tb_show('Sorenson 360 Embed','<?php bloginfo('wpurl'); ?>/index.php?sor360_action=sor360_embed_dialog&width=720&height=600');
+      tb_show('Squeeze Stream Embed','<?php bloginfo('wpurl'); ?>/index.php?sor360_action=sor360_embed_dialog&width=720&height=600');
       
       
     }
@@ -247,9 +247,9 @@ function sor360_login_test($username, $password) {
   $account = S360_Account::login($username, $password);
 
   if (is_a($account, 'S360_Account')) {
-    return __("360 Login succeeded, Let's Rock and Roll, Press Update Below to save.", 'sorenson_360');
+    return __("Squeeze Stream Login succeeded, Let's Rock and Roll, Press Update Below to save.", 'sorenson_360');
   } else {
-    return __('Sorry, 360 login failed. Error message from Sorenson 360: ' . $account['errorMessage'], 'sorenson_360');
+    return __('Sorry, 360 login failed. Error message from Squeeze Stream: ' . $account['errorMessage'], 'sorenson_360');
   }
 }
 
@@ -267,7 +267,7 @@ function sor360_init() {
   wp_enqueue_script( 'jquery-ui-tabs' );
   
   if (isset($wp_version) && version_compare($wp_version, '2.5', '>=') && empty ($sor360->install_date)) {
-    add_action('admin_notices', create_function( '', "echo '<div class=\"error\"><p>Please update your <a href=\"".get_bloginfo('wpurl')."/wp-admin/options-general.php?page=sorenson-360.php\">360 settings</a>.</p></div>';" ) );
+    add_action('admin_notices', create_function( '', "echo '<div class=\"error\"><p>Please update your <a href=\"".get_bloginfo('wpurl')."/wp-admin/options-general.php?page=sorenson-360.php\">Squeeze Stream settings</a>.</p></div>';" ) );
   }
 }
 add_action('init', 'sor360_init');
@@ -394,7 +394,7 @@ function sor360_options_form() {
   $sor360->author_override == 'on' ? $override = "checked='checked'" : "";
   print('
       <div class="wrap" id="sor360_options_page">
-        <h2>'.__('Sorenson 360 Options', 'sorenson-360').'</h2>
+        <h2>'.__('Squeeze Stream Options', 'sorenson-360').'</h2>
         <form id="sor360_options" name="sor360_options" action="'.get_bloginfo('wpurl').'/wp-admin/options-general.php" method="post">
           <input type="hidden" name="sor360_action" value="sor360_update_settings" />
           <fieldset class="options">
@@ -415,9 +415,9 @@ function sor360_options_form() {
             </div>
             
           </fieldset>
-          <p id="author_override"><input type="checkbox" name="sor360_author_override" '.$override.'/> Allow individual Authors to supply/use their own 360 library? </p>
+          <p id="author_override"><input type="checkbox" name="sor360_author_override" '.$override.'/> Allow individual Authors to supply/use their own Squeeze Stream library? </p>
           <p class="submit">
-            <input type="submit" name="submit" value="'.__('Update Sorenson 360 Options', 'sorenson-360').'" />
+            <input type="submit" name="submit" value="'.__('Update Squeeze Stream Options', 'sorenson-360').'" />
           </p>
         </form>
       </div>
@@ -434,8 +434,8 @@ function sor360_options_form() {
 function sor360_menu_items() {
   if (current_user_can('manage_options')) {
     add_options_page(
-      __('Sorenson 360 Options', 'sorenson-360')
-      , __('Sorenson 360', 'sorenson-360')
+      __('Squeeze Stream Options', 'sorenson-360')
+      , __('Squeeze Stream', 'sorenson-360')
       , 10
       , basename(__FILE__)
       , 'sor360_options_form'
@@ -474,8 +474,8 @@ function sor360_unique_author_auth() {
     
     print('
       <div class="wrap" id="sor360_options_page">
-        <h3>'.__('Sorenson 360 Options', 'sorenson-360').'</h3>
-        <p>If you have a Sorenson 360 Account, enter it below to gain access to your files to embed in posts</p>
+        <h3>'.__('Squeeze Stream Options', 'sorenson-360').'</h3>
+        <p>If you have a Squeeze Stream Account, enter it below to gain access to your files to embed in posts</p>
           <input type="hidden" name="sor360_action" value="sor360_update_settings_user" />
           <input type="hidden" name="sor360_user_id" value="'.$user_id.'" />
 
@@ -527,9 +527,9 @@ function sor360_embed_dialog(){
   // TODO Better error handling
   
   if (!$s_username || !$s_password) {
-    print('<h3>Sorenson 360 username and password not set.</h3><p>Please visit your profile or settings to configure Sorenson 360</p>');
+    print('<h3>Squeeze Stream username and password not set.</h3><p>Please visit your profile or settings to configure Squeeze Stream</p>');
   } elseif (!is_a($account, 'S360_Account')) {
-    print('<h3>Sorenson 360 Error: ' . $account['errorMessage'] . '</h3>');
+    print('<h3>Squeeze Stream Error: ' . $account['errorMessage'] . '</h3>');
   } else {
     
     $doc = '';
@@ -552,7 +552,7 @@ function sor360_embed_dialog(){
     </script>
     
     <div id="swrap">
-    <h2 class="sor_w_title">Your Sorenson 360 library <small><em>Choose video to embed.</em></small></h2>
+    <h2 class="sor_w_title">Your Squeeze Stream library <small><em>Choose video to embed.</em></small></h2>
     
     <div id="sor360Tabs" class="ui-tabs">
       <ul class="ui-tabs-nav">
@@ -734,7 +734,7 @@ function sor360_pagination($page){
 
   // TODO Better error handling
   if (!is_a($account, 'S360_Account')) {
-    print('<h3>Sorenson 360 Error: ' . $account['errorMessage'] . '</h3>');
+    print('<h3>Squeeze Stream Error: ' . $account['errorMessage'] . '</h3>');
   } else {
     
     $assets = $account->getAssets($offset, SOR360_PAGINATION_LIMIT);
